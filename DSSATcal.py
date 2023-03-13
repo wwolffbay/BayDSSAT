@@ -468,7 +468,7 @@ if __name__ == '__main__':
     fields = df.index.unique()
        
     # Number of cores in one machine
-    n_cores = 25 
+    n_cores = 50 
         
     # Horizontal scaling for n hardwares
     fields_hard = np.array_split(fields, int(n_hards))
