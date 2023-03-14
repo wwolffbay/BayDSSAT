@@ -468,7 +468,13 @@ if __name__ == '__main__':
     fields = df.index.unique()
        
     # Number of cores in one machine
-    n_cores = 40 
+    n_cores = 25
+
+    # Number of Fields
+    # n_fields=len(fields)
+
+    # Number of jobs/machines started in Domino
+    # n_hards = np.ceil(n_fields/n_cores)
         
     # Horizontal scaling for n hardwares
     fields_hard = np.array_split(fields, int(n_hards))

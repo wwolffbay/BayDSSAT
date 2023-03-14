@@ -9,7 +9,7 @@ domino = Domino(
     host=os.environ["DOMINO_API_HOST"],
 )
 
-n_jobs = 10 
+n_jobs = 36 
 
 for i in range(n_jobs):
     domino_run = domino.runs_start(
